@@ -53,6 +53,7 @@
         font-weight: 700;
         font-size: 55px;
         line-height: 67px;
+         padding-top: 18px;
     }
      &__description{
         text-align: center;
@@ -128,6 +129,11 @@
             &:nth-child(odd){
                 background-color: $background-color-darkgray;
             }
+        }
+
+        &__item{
+          min-width: 100%;
+           height: 50px;
         }
        &__verificetion{
            height: 13px;
