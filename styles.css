@@ -9,6 +9,7 @@ html {
 
 .table {
   max-width: 1170px;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +17,7 @@ html {
 
 .price-card {
   width: 380px;
-  height: 770x;
+  height: 770px;
   background-color: #334247;
   margin-right: 15px;
   display: flex;
@@ -55,28 +56,28 @@ html {
 }
 .price-card__description {
   text-align: center;
-  margin: 39px 26px 42px 26px;
+  margin: 39px 26.5px 42px 26px;
   color: #fff;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
 }
-.price-cardoptions-list {
+.price-card__options-list {
   width: 100%;
   min-height: 300px;
 }
 .price-card__order-btn {
+  font-family: "Montserrat", sans-serif;
   width: 155px;
   height: 40px;
   background-color: #5BB189;
-  color: #fff;
   border-radius: 20px;
   border: none;
-  font-size: 14px;
+  color: #fff;
+  font-size: 15px;
   line-height: 17px;
   text-align: center;
-  margin-top: 27px;
-  font-family: "Montserrat";
+  margin-top: 37px;
 }
 .price-card__wrap {
   width: 380px;
@@ -108,8 +109,6 @@ html {
 
 .options-list {
   list-style-type: none;
-  width: 380px;
-  height: 300px;
   margin: 0;
   padding: 0;
 }
@@ -117,7 +116,7 @@ html {
   display: flex;
   align-items: center;
   color: #fff;
-  padding-left: 22px;
+  padding-left: 22.25px;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -129,7 +128,7 @@ html {
 .options-list__verificetion {
   height: 13px;
   width: 15px;
-  margin-right: 21px;
+  margin-right: 21.4px;
 }
 
 .title-blue {

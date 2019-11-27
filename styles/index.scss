@@ -1,42 +1,40 @@
 @import'variables.scss';
- body{
-     background-color: $background-color;
- }
 
- html{
-     font-family: 'Montserrat', sans-serif;
-     font-size: 16px;
- }
-
- .table{
+body{
+    background-color: $background-color;
+   
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.table{
     max-width: 1170px;
-     min-height: 100vh;
-    display: flex;
-    align-items: center;
- }
-
- .price-card{
-
-    width:380px;
-    height: 770x;
+            margin: auto;
+            min-height: 100vh;
+            display: flex;
+             align-items: center; 
+}
+.price-card{
+    width: 380px;
+    height: 770px;
     background-color: $background-color-dark;
     margin-right: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+ align-items: center;
     &:last-child{
         margin-right: 0;
     }
-
     &__title{
         width: 100px;
         color: $text-color-white;
         font-size: 20px;
         font-weight: 300;
-        text-align: center;
-        line-height: 25px;
-        margin-bottom: 36px;
-        margin-top: 30px;
+text-align: center;
+line-height: 25px;
+margin-bottom: 36px;
+margin-top: 30px;
     }
     &__title-bold{
         font-weight: 700;
@@ -44,19 +42,6 @@
         line-height: 43px;
     }
     &__price{
-        // // height: 104px;
-        // width: 100%;
-        // background-color: $background-color-green;
-        // display: flex;
-        // justify-content: center;
-        // color:  $text-color-white;
-        // font-weight: 700;
-        // font-size: 55px;
-        // line-height: 67px;
-        // margin: 0;
-        //  padding-top: 18px;
-        // //   margin-bottom: 19px;
-        // //   bottom: 19px;
         height: 104px;
         background-color: $background-color-green;
         width: 100%;
@@ -67,113 +52,99 @@
         font-size: 55px;
         line-height: 67px;
         font-weight: 700;
-         
     }
-     &__description{
+    &__description{
         text-align: center;
-        margin: 39px 26px 42px 26px;
+        margin: 39px 26.5px 42px 26px;
         color: $text-color-white;
+        font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+    }
+    &__options-list{
+        width: 100%;
+        min-height: 300px;
+    }
+    &__order-btn{
+        font-family: "Montserrat", sans-serif;
+width: 155px;
+height: 40px;
+background-color: $background-color-green;
+border-radius: 20px;
+border: none;
+color: $text-color-white;
+font-size: 15px;
+line-height: 17px;
+text-align: center;
+margin-top: 37px;
+    }
+ &__wrap {
+    width: 380px;
+    height: auto;
+    position: absolute;
+
+  }
+   &__wrap-ribbon {
+    width: 106px;
+    height: 106px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+    &__ribbon {
+        position: relative;
+        width: 150px;
+        background-color: $background-color-red;
+        color: $text-color-white;
+        text-align: center;
+        padding: 4px 0;
+        top: 25px;
+        left: -10px;
+      transform: rotate(45deg);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+    }
+}
+.options-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &__item{
+        display: flex;
+        align-items: center;
+        color: $text-color-white;
+        padding-left: 22.25px;
         font-weight: 300;
         font-size: 15px;
         line-height: 18px;
-
-     }
-
-     &options-list{
-        width: 100%;
-       min-height: 300px;
-     }
-
-     &__order-btn{
-
-        width: 155px;
-        height: 40px;
-        background-color: $background-color-green;
-        color: $text-color-white;
-        border-radius: 20px;
-        border: none;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        margin-top: 27px;
-        font-family: 'Montserrat';
-     }
-
-     &__wrap {
-        width: 380px;
-        height: auto;
-        position: absolute;
-    
-      }
-       &__wrap-ribbon {
-        width: 106px;
-        height: 106px;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-        &__ribbon {
-            position: relative;
-            width: 150px;
-            background-color: $background-color-red;
-            color: $text-color-white;
-            text-align: center;
-            padding: 4px 0;
-            top: 25px;
-            left: -10px;
-          transform: rotate(45deg);
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 17px;
+        height: 50px;
+        &:nth-child(odd){
+            background-color: $background-color-darkgray;
         }
     }
-    .options-list{
-        list-style-type: none;
-        width: 380px;
-        height: 300px;
-        margin: 0;
-        padding: 0;
-        &__item{
-            display: flex;
-            align-items: center;
-            color: $text-color-white;
-            padding-left: 22px;
-            font-weight: 300;
-            font-size: 15px;
-            line-height: 18px;
-            height: 50px;
-            &:nth-child(odd){
-                background-color: $background-color-darkgray;
-            }
-        }
-
-        // &__item{
-        //   min-width: 100%;
-        //    height: 50px;
-        // }
-       &__verificetion{
-           height: 13px;
-           width: 15px;
-           margin-right: 21px;
-       }
-    }
-    .title-blue{
-        width: 163px;
-    }
-    .price-blue{
-        background-color: $background-color-blue;
-    }
-    .order-btn-blue{
-        background-color: $background-color-blue;
-    }
-    .title-orange{
-        width: 176px;
-    }
-    .price-orange{
-        background-color: $background-color-orange;
-    }
-    .order-btn-orange{
-        background-color: $background-color-orange;
-    }
-     
+   &__verificetion{
+       height: 13px;
+       width: 15px;
+       margin-right: 21.4px;
+   }
+}
+.title-blue{
+    width: 163px;
+}
+.price-blue{
+    background-color: $background-color-blue;
+}
+.order-btn-blue{
+    background-color: $background-color-blue;
+}
+.title-orange{
+    width: 176px;
+}
+.price-orange{
+    background-color: $background-color-orange;
+}
+.order-btn-orange{
+    background-color: $background-color-orange;
+}
