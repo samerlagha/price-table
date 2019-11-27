@@ -44,16 +44,30 @@
         line-height: 43px;
     }
     &__price{
+        // // height: 104px;
+        // width: 100%;
+        // background-color: $background-color-green;
+        // display: flex;
+        // justify-content: center;
+        // color:  $text-color-white;
+        // font-weight: 700;
+        // font-size: 55px;
+        // line-height: 67px;
+        // margin: 0;
+        //  padding-top: 18px;
+        // //   margin-bottom: 19px;
+        // //   bottom: 19px;
         height: 104px;
-        width: 100%;
         background-color: $background-color-green;
+        width: 100%;
         display: flex;
         justify-content: center;
-        color:  $text-color-white;
-        font-weight: 700;
+        align-items: center;
+        color: $text-color-white;
         font-size: 55px;
         line-height: 67px;
-         padding-top: 18px;
+        font-weight: 700;
+         
     }
      &__description{
         text-align: center;
@@ -82,6 +96,7 @@
         line-height: 17px;
         text-align: center;
         margin-top: 27px;
+        font-family: 'Montserrat';
      }
 
      &__wrap {
